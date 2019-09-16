@@ -1,0 +1,10 @@
+#! python3
+
+from selenium import webdriver
+from amazonhome import HomePage, PayPage
+from amazonshoe import ShoePage
+from amazonformal import FormalshoePage
+import pickle, time
+import pytest
+
+@pytest.fixture(scope='class')
