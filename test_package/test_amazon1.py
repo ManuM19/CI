@@ -1,7 +1,7 @@
 #! python3
 
 from selenium import webdriver
-from amazonhome import HomePage, PayPage
+from PageObjects.amazonhome import HomePage
 #from amazonshoe import ShoePage
 #from amazonformal import FormalshoePage
 import pickle, time
