@@ -14,7 +14,7 @@ def set_up(request):
     request.cls.driver = driver
   driver.get("https://www.amazon.in/")
   driver.maximize_window()
-  cookies = pickle.load(open("cookies.pkl", "rb"))
+  cookies = pickle.load(open("C:\\Users\\anshu\\AppData\\Local\\Programs\\Python\\Jenkinsjob\\cookies.pkl", "rb"))
   for cookie in cookies:
     driver.add_cookie(cookie)
   time.sleep(5)
@@ -27,4 +27,4 @@ class TestAmazon:
   def test_orders(self):
     home = HomePage(self.driver)
     orders = home.your_orders()
-    assert '4' in orders
+    assert '5' in orders
