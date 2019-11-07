@@ -27,4 +27,4 @@ class TestAmazon:
   def test_orders(self):
     home = HomePage(self.driver)
     orders = home.your_orders()
-    assert '5' in orders
+    assert '7' in orders
