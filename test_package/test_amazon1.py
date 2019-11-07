@@ -14,7 +14,7 @@ def set_up(request):
     request.cls.driver = driver
   driver.get("https://www.amazon.in/")
   driver.maximize_window()
-  cookies = pickle.load(open("C:\\Users\\anshu\\AppData\\Local\\Programs\\Python\\Jenkinsjob\\cookies.pkl", "rb"))
+  cookies = pickle.load(open("C:\\Users\\anshu\\AppData\\Local\\Programs\\Python\\Jenkinsjob\\test_package\\cookies.pkl", "rb"))
   for cookie in cookies:
     driver.add_cookie(cookie)
   time.sleep(5)
